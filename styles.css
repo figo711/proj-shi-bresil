@@ -47,8 +47,16 @@ h1 {
   height: 99vh;
 }
 
+.fs-page-tr {
+  height: 101vh;
+}
+
 .fs-page-2 {
-  height: 135vh;
+  height: 150vh;
+}
+
+.fs-page-3 {
+  height: 145vh;
 }
 
 .fs-page-hide-bg {
@@ -69,7 +77,11 @@ h1 {
 }
 
 .fs-page-half {
-  height: 38vh;
+  height: 60vh;
+}
+
+.fs-page-half-2 {
+  height: 40vh;
 }
 
 .fs-blue-detail {
