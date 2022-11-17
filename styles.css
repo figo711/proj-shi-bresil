@@ -1,0 +1,218 @@
+@font-face { font-family: VCR_OSD_Mono; src: url('./assets/font/VCR_OSD_MONO_1.001.ttf'); } 
+@font-face { font-family: Retro; src: url('./assets/font/alagard.ttf'); }
+
+body {
+  background-color: black;
+  color: white;
+  padding-bottom: 0;
+  height: 98%;
+  width: 100%;
+  font-family: Retro;
+}
+h1 {
+  text-align: center;
+}
+
+.fs-bg-1, .fs-bg-2, .fs-bg-3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.fs-bg-1 {
+  background-image: url('./assets/gfx/ama3.png');
+}
+
+.fs-bg-2 {
+  background-image: url('./assets/gfx/ama1.png');
+}
+
+.fs-bg-3 {
+  background-image: url('./assets/gfx/ama2.png');
+}
+
+.fs-cursive-detail-1 {
+  font-style: italic;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.fs-text-align-center {
+  text-align: center;
+}
+
+.fs-page {
+  height: 99vh;
+}
+
+.fs-page-2 {
+  height: 135vh;
+}
+
+.fs-page-hide-bg {
+  background: rgb(25, 135, 84);
+}
+
+.fs-page-hide-bg-2 {
+  background: rgb(13, 110, 253);
+}
+
+
+.fs-page-hide-bg-3 {
+  background: rgb(28, 28, 14);
+}
+
+.fs-page-hide-bg-4 {
+  background: rgb(72, 41, 120);
+}
+
+.fs-page-half {
+  height: 38vh;
+}
+
+.fs-blue-detail {
+  color: dodgerblue;
+}
+
+.strokeme {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.fs-dc-columns {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+.fs-partie {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fs-partie li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.fs-partie .fs-partie-grey {
+  background-color: #eee;
+  font-size: 20px;
+  color: black;
+}
+
+.fs-button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.flip-card {
+  box-sizing: border-box;
+  float: left;
+  width: 33.3%;
+  background-color: transparent;
+  height: 75%;
+  perspective: 1000px;
+  padding: 8px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner-1 {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card:hover .flip-card-inner-2 {
+  transform: rotateX(-180deg);
+}
+
+
+.flip-card:hover .flip-card-inner-3 {
+  transform: rotateY(-180deg);
+}
+
+.flip-card-front, .flip-card-back, .flip-card-back-inverted {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: white;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.fs-high-order {
+  z-index: 2;
+}
+
+.fs-high-emoji {
+  font-size: 18px;
+}
+
+.fs-modal-b-text {
+  color: black;
+}
+
+.flip-card-back-inverted {
+  color: white;
+  transform: rotateX(180deg);
+}
+
+#fs-card-env {
+  background-image: url('./assets/gfx/tree.png');
+  background-size: cover;
+}
+
+#fs-card-tech {
+  background-image: url('./assets/gfx/enge.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#fs-card-pol {
+  background-image: url('./assets/gfx/paperpp.png');
+  background-size: 65% 65%;
+  background-repeat: no-repeat;
+  background-position-y: 85%;
+  background-position-x: center;
+}
+
+.fs-hidden-effect {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.fs-visible-effect {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
